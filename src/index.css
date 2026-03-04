@@ -1,2 +1,9 @@
+/* Google font rocester */
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+.rochester-regular {
+  font-family: "Rochester", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
