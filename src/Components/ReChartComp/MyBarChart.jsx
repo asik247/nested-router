@@ -14,13 +14,24 @@ const MyBarChart = ({ promiseAxios }) => {
     const students = promiseData.data;
 
     // nested array flatten করে এক লেভেলে নিয়ে আসলাম
-    const chartData = students.flatMap(student =>
-        student.subjects.map(sub => ({
-            student: student.name,
-            book: sub.subject,
-            mark: sub.obtained_marks
-        }))
-    );
+    // const chartData = students.flatMap(student =>
+    //     student.subjects.map(sub => ({
+    //         student: student.name,
+    //         book: sub.subject,
+    //         mark: sub.obtained_marks
+    //     }))
+    // );
+    const chartData = [];
+    students.forEach(student=>{
+        // console.log(student);
+        student.subjects.forEach(sub=>{
+            chartData.push({
+                book:sub.subject,
+                mark:sub.obtained_marks
+            })
+        })
+    })
+
 
     return (
        <div>
@@ -37,3 +48,51 @@ const MyBarChart = ({ promiseAxios }) => {
 };
 
 export default MyBarChart;
+
+
+/**
+ * [
+  {
+    "employee_id": "EMP001",
+    "name": "Alice",
+    "department": "Engineering",
+    "skills": [
+      { "skill": "JavaScript", "level": "Advanced" },
+      { "skill": "React", "level": "Intermediate" }
+    ]
+  },
+  {
+    "employee_id": "EMP002",
+    "name": "Bob",
+    "department": "Design",
+    "skills": [
+      { "skill": "Photoshop", "level": "Advanced" },
+      { "skill": "Illustrator", "level": "Intermediate" }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+const skillData = [];
+
+employees.forEach(employee => {
+  employee.skills.forEach(skill => {
+    skillData.push({
+      employeeName: employee.name,
+      department: employee.department,
+      skill: skill.skill,
+      level: skill.level
+    });
+  });
+});
+
+console.log(skillData);
+ */
