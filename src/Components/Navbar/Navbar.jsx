@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -12,17 +13,17 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
+                            <a href="/">Home</a>
+                            <a href="contact">Contact</a>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">Nested</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                    </ul>
+                       <Link to={'/'}>Home</Link>
+                       <Link to={'contact'}>Contact</Link>
+                        </ul>
                 </div>
                 <div className="navbar-end">
                     <a className="btn">LogOut</a>
