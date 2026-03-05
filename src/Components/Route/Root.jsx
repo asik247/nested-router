@@ -13,11 +13,11 @@ const Root = () => {
         <div>
             <Navbar></Navbar>
             <div className='h-screen'>
-                <Outlet>
+           
                     <Suspense fallback={<h1>Loaddin..</h1>}>
                         <MyBarChart promiseAxios={promiseAxios}></MyBarChart>
                     </Suspense>
-                </Outlet>
+               
             </div>
             <Footer></Footer>
         </div>
