@@ -7,6 +7,7 @@ import Root from './Components/Route/Root.jsx'
 import About from './Components/About/About.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Profile from './Components/Profile/Profile.jsx'
+import MyBarChart from './Components/ReChartComp/MyBarChart.jsx'
 
 // Nested router code start here;
 const router = createBrowserRouter([
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       {index:true,Component:About},
       {path:"contact",Component:Contact},
       {path:"profile",Component:Profile},
+      {path:'chart',Component:MyBarChart}
     ]
   }
 ])

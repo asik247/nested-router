@@ -1,0 +1,50 @@
+[
+  {
+    "student_id": "STU1001",
+    "name": "Rahim Ahmed",
+    "class": "10",
+    "section": "A",
+    "roll_number": 1,
+    "subjects": [
+      { "subject": "English", "full_marks": 100, "obtained_marks": 85 },
+      { "subject": "Bangla", "full_marks": 100, "obtained_marks": 78 },
+      { "subject": "Mathematics", "full_marks": 100, "obtained_marks": 92 },
+      { "subject": "Science", "full_marks": 100, "obtained_marks": 88 }
+    ],
+    "total_marks": 343,
+    "percentage": 85.75,
+    "result": "Passed"
+  },
+  {
+    "student_id": "STU1002",
+    "name": "Karim Hasan",
+    "class": "10",
+    "section": "A",
+    "roll_number": 2,
+    "subjects": [
+      { "subject": "English", "full_marks": 100, "obtained_marks": 65 },
+      { "subject": "Bangla", "full_marks": 100, "obtained_marks": 70 },
+      { "subject": "Mathematics", "full_marks": 100, "obtained_marks": 55 },
+      { "subject": "Science", "full_marks": 100, "obtained_marks": 60 }
+    ],
+    "total_marks": 250,
+    "percentage": 62.5,
+    "result": "Passed"
+  },
+  {
+    "student_id": "STU1003",
+    "name": "Sadia Akter",
+    "class": "10",
+    "section": "A",
+    "roll_number": 3,
+    "subjects": [
+      { "subject": "English", "full_marks": 100, "obtained_marks": 95 },
+      { "subject": "Bangla", "full_marks": 100, "obtained_marks": 88 },
+      { "subject": "Mathematics", "full_marks": 100, "obtained_marks": 98 },
+      { "subject": "Science", "full_marks": 100, "obtained_marks": 91 }
+    ],
+    "total_marks": 372,
+    "percentage": 93.0,
+    "result": "Passed"
+  }
+]

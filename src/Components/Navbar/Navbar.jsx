@@ -16,6 +16,7 @@ const Navbar = () => {
                             <NavLink to={'/'}>Home</NavLink>
                             <NavLink to={'contact'}>Contact</NavLink>
                             <NavLink to={'profile'}>Profile</NavLink>
+                            <NavLink to={'chart'}>Charts</NavLink>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">Nested</a>
@@ -25,6 +26,7 @@ const Navbar = () => {
                         <NavLink to={'/'}>Home</NavLink>
                         <NavLink to={'contact'}>Contact</NavLink>
                         <NavLink to={'profile'}>Profile</NavLink>
+                        <NavLink to={'chart'}>Charts</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end">
